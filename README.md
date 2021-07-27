@@ -45,3 +45,7 @@ Acknowledgments Professor David.
 For any queries and suggestions feel free to message me.
 
 Thank you
+
+
+<img width="406" alt="Screenshot 2021-07-27 at 5 14 13 PM" src="https://user-images.githubusercontent.com/84158990/127228370-84318abc-a3fd-4516-86b3-a3054e090ae8.png">
+<img width="406" alt="Screenshot 2021-07-27 at 5 14 02 PM" src="https://user-images.githubusercontent.com/84158990/127228380-6c068c46-ca08-4eee-8009-2c9e06d106b4.png">
