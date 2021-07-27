@@ -7,68 +7,107 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/result"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Result here" />
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+<!--Result area is in middle and theme applied of TextStyle-->
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Result here"
+            style="@style/textStyle"/>
+
+    </LinearLayout>
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingEnd="10dp"
         android:orientation="horizontal">
+
+        <!-- FUnction buttons are styled differently with
+        ButtonStylefunction defined in styles file-->
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:text="CE"
+            style="@style/buttonStylefunctions"/>
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="CE" />
+            android:text="C"
+            android:layout_margin="2dp"
+            style="@style/buttonStylefunctions"/>
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="C" />
+            android:text="DEL"
+            android:layout_margin="2dp"
+            style="@style/buttonStylefunctions"/>
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="DEL" />
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="*" />
+            android:layout_margin="2dp"
+            android:text="*"
+            style="@style/buttonStylefunctions"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="10dp"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+            <!-- Number buttons are styled differently with
+        button style defined in styles file-->
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="7" />
+            android:text="7"
+            android:layout_margin="2dp"
+            style="@style/buttonStyle"/>
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="8" />
+            android:text="8"
+            android:layout_margin="2dp"
+            style="@style/buttonStyle"/>
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="9" />
+            android:text="9"
+            android:layout_margin="2dp"
+            style="@style/buttonStyle"/>
+
+            <!-- FUnction buttons are styled differently with
+        ButtonStylefunction defined in styles file-->
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="/" />
+            android:text="/"
+            android:layout_margin="2dp"
+            style="@style/buttonStylefunctions"/>
         </LinearLayout>
 
         <LinearLayout
@@ -79,22 +118,33 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="4" />
+                android:text="4"
+                android:layout_margin="2dp"
+                style="@style/buttonStyle"/>
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="5" />
+                android:text="5"
+                android:layout_margin="2dp"
+                style="@style/buttonStyle"/>
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="6" />
+                android:text="6"
+                android:layout_margin="2dp"
+                style="@style/buttonStyle"/>
+
+            <!-- FUnction buttons are styled differently with
+        ButtonStylefunction defined in styles file-->
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="*" />
+                android:text="*"
+                android:layout_margin="2dp"
+                style="@style/buttonStylefunctions"/>
         </LinearLayout>
 
         <LinearLayout
@@ -105,22 +155,33 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="1" />
+                android:text="1"
+                android:layout_margin="2dp"
+                style="@style/buttonStyle"/>
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="2" />
+                android:text="2"
+                android:layout_margin="2dp"
+                style="@style/buttonStyle"/>
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="3" />
+                android:text="3"
+                android:layout_margin="2dp"
+                style="@style/buttonStyle"/>
+
+            <!-- FUnction buttons are styled differently with
+        ButtonStylefunction defined in styles file-->
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="-" />
+                android:text="-"
+                android:layout_margin="2dp"
+                style="@style/buttonStylefunctions"/>
         </LinearLayout>
 
         <LinearLayout
@@ -131,22 +192,36 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="0" />
+                android:text="0"
+                android:layout_margin="2dp"
+                style="@style/buttonStyle"/>
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="." />
+                android:text="."
+                android:layout_margin="2dp"
+                style="@style/buttonStyle"/>
+
+            <!-- FUnction buttons are styled differently with
+        buttonStyleEqual defined in styles file and this one is red dark-->
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="=" />
+                android:text="="
+                android:layout_margin="2dp"
+                style="@style/buttonStyleEqual"/>
+
+            <!-- FUnction buttons are styled differently with
+        ButtonStylefunction defined in styles file-->
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="+" />
+                android:text="+"
+                android:layout_margin="2dp"
+                style="@style/buttonStylefunctions"/>
         </LinearLayout>
     </LinearLayout>
 

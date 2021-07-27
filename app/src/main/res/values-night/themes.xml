@@ -1,16 +1,53 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
+<!--    For All Api versions except v24-->
     <style name="Theme.CalculatorLayout" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_200</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimary">@color/red_dark</item>
+        <item name="colorPrimaryVariant">@color/red_dark</item>
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorSecondary">@color/red_light</item>
+        <item name="colorSecondaryVariant">@color/red_light</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <!--    Theme for TextView Top -->
+    <style name="textStyle" parent="Widget.MaterialComponents.TextView">
+        <item name="color">@color/white</item>
+        <item name="android:textSize">30sp</item>
+        <item name="fontFamily">sans-serif-condensed-medium</item>
+    </style>
+
+    <!--    Theme for Button Normal keys-->
+    <style name="buttonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:textSize">14sp</item>
+        <item name="fontStyle">normal</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="backgroundTint">@color/white</item>
+    </style>
+
+    <!--    Theme for Button Equal Sign-->
+    <style name="buttonStyleEqual" parent="Widget.MaterialComponents.Button">
+        <item name="android:textSize">14sp</item>
+        <item name="fontStyle">normal</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="backgroundTint">@color/red_dark</item>
+    </style>
+
+    <!--    Theme for Button in Functions-->
+    <style name="buttonStylefunctions" parent="Widget.MaterialComponents.Button">
+        <item name="android:textSize">14sp</item>
+        <item name="fontStyle">normal</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="backgroundTint">@color/red_light</item>
+    </style>
+
+
 </resources>
